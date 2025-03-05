@@ -1,0 +1,77 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+    font-family: 'Karla', sans-serif;
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+  #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box; 
+  }
+
+  #profilePicture img {
+      width: 150px;
+      height: 170px;
+      border-radius: 50%;
+      margin-bottom: -20px;
+      pointer-events: none; 
+  }
+
+  #links {
+      width: 100%;
+      max-width: 400px; 
+  }
+
+  .link {
+      display: block;
+      margin: 10px 50px;
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+  }
+
+  .link:hover {
+      background-color: white;
+      color: black;
+  }
+
+  #hashtag {
+      margin-top: 20px;
+      font-size: 1rem;
+      background: linear-gradient(90deg, black, white, black);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: animate 3s linear infinite;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes animate {
+      0% { background-position: -500%; }
+      100% { background-position: 500%; }
+  }
+  footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      background-color: rgba(0, 0, 0, 0.5); 
+      font-size: 0.7rem;
+      color: rgb(42, 42, 42);
+  }
